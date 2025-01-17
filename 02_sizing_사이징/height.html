@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>h-</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+      <!-- <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              height: {
+                "400custom": '400px', // class name : value
+              }
+            }
+          }
+        }
+      </script> -->
+</head>
+<body>
+    
+<style>
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+html {font-size:16px}
+body {font-family:Pretendard-Regular;}
+
+
+
+#wrap .inner_wrap {height:98%;margin:0 auto;padding:40px;display:block;overflow:hidden}
+span.css {color:#0ea5e9;font-weight:bold;}
+div.explain {padding:20px;border-radius:5px;background:#EDF2FA;}
+
+
+
+
+
+#example .ex_head {margin:0 0 20px 0}
+
+#example .ex_head_tit {margin:0 0 10px 0}
+
+.sample_box {margin:0 0 20px 0}
+.sample_box .sample_ex {margin:0 0 20px 0;border:1px solid #ccc;}
+
+
+
+
+</style>
+<div id="wrap">
+    <div class="inner_wrap">
+
+
+      <div id="example">
+
+      <div class="ex_head">
+        <h2 class="ex_head_tit text-3xl">Height</h2>
+        <div class="explain">너비는 접두사 <b>h-</b>로 시작한다</div>
+      </div>
+
+
+        <div class="sample_box">
+          <p class="sb_tit"><b class="css">h-0</b> : height:  0px</p>
+          <div class="sample_ex h-0"></div>
+        </div>
+
+        <div class="sample_box">
+          <p class="sb_tit"><b class="css">h-px</b> : height:  1px</p>
+          <div class="sample_ex h-px"></div>
+        </div>
+
+
+
+
+      </div>
+
+
+
+
+
+
+
+        <p class="h-0"><span class="css">h-0</span>  height:0px;</p>
+        <p class="h-px"><span class="css">h-px</span> height:1px</p>
+        <p class="h-4"><span class="css">h-4</span> height:1rem; 16px</p>
+        <p class="h-96"><span class="css">h-100</span></p>
+        <p class="h-auto"><span class="css">h-auto</span> height:auto</p>
+        <p class="h-1/2"><span class="css">h-1/2</span> height:50%</p>
+        <p class="h-2/4"><span class="css">h-2/4</span> height:50%</p>
+        <p class="h-1/4"><span class="css">h-1/4</span> height:25%</p>
+        <p class="h-1/5"><span class="css">h-1/5</span> height:20%</p>
+        <p class="h-full"><span class="css">h-full</span> height:100%</p>
+        <p class="h-screen"><span class="css">h-screen</span> height:100vw</p>
+        <p class="h-[300px]"><span class="css">h-300px</span> 고정값 입력</p>
+        <p class="h-400custom"><span class="css">h-400custom</span> 스크립트 커스터마이징</p>
+    </div>
+    <!-- //inner_wrap -->
+</div>
+<!-- //wrap -->
+
+
+</body>
+</html>
